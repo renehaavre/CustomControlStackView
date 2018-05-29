@@ -12,6 +12,7 @@
 		948C0C3720BDC0170039BE53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948C0C3520BDC0170039BE53 /* Main.storyboard */; };
 		948C0C3920BDC0190039BE53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948C0C3820BDC0190039BE53 /* Assets.xcassets */; };
 		948C0C3C20BDC0190039BE53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948C0C3A20BDC0190039BE53 /* LaunchScreen.storyboard */; };
+		948C0C4420BDCCC40039BE53 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C0C4320BDCCC40039BE53 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		948C0C3820BDC0190039BE53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		948C0C3B20BDC0190039BE53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		948C0C3D20BDC0190039BE53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948C0C4320BDCCC40039BE53 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				948C0C3120BDC0170039BE53 /* AppDelegate.swift */,
 				948C0C3320BDC0170039BE53 /* ViewController.swift */,
 				948C0C3520BDC0170039BE53 /* Main.storyboard */,
+				948C0C4320BDCCC40039BE53 /* RatingControl.swift */,
 				948C0C3820BDC0190039BE53 /* Assets.xcassets */,
 				948C0C3A20BDC0190039BE53 /* LaunchScreen.storyboard */,
 				948C0C3D20BDC0190039BE53 /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				948C0C3420BDC0170039BE53 /* ViewController.swift in Sources */,
+				948C0C4420BDCCC40039BE53 /* RatingControl.swift in Sources */,
 				948C0C3220BDC0170039BE53 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
