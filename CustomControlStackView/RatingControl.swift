@@ -10,8 +10,12 @@ import UIKit
 
 class RatingControl: UIStackView {
 
-    //MARK: Init
+    //MARK: Properties
+    private var ratingButtons = [UIButton]()
     
+    var rating = 0
+    
+    //MARK: Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupButtons()
@@ -32,20 +36,23 @@ class RatingControl: UIStackView {
     
     private func setupButtons(){
         
-        //Create button
-        let button = UIButton()
-        button.backgroundColor = UIColor.red
-        
-        //Add constraints
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.heightAnchor.constraint(equalToConstant: 44.0).isActive = true
-        button.widthAnchor.constraint(equalToConstant: 44.0).isActive = true
-        
-        // Add the button to the stack
-        addArrangedSubview(button)
-        
-        // Set the button action
-        button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for: .touchUpInside)
+        for _ in 0..<5 {
+            //Create button
+            let button = UIButton()
+            button.backgroundColor = UIColor.red
+            
+            //Add constraints
+            button.translatesAutoresizingMaskIntoConstraints = false
+            button.heightAnchor.constraint(equalToConstant: 44.0).isActive = true
+            button.widthAnchor.constraint(equalToConstant: 44.0).isActive = true
+            
+            // Add the button to the stack
+            addArrangedSubview(button)
+            
+            // Set the button action
+            button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for: .touchUpInside)
+            ratingButtons.append(button)
+        }
     }
 
 }
