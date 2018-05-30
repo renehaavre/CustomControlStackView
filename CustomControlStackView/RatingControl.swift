@@ -46,6 +46,14 @@ import UIKit
     
     private func setupButtons(){
         
+        //Clear any existing buttons
+        for button in ratingButtons{
+            removeArrangedSubview(button)
+            button.removeFromSuperview()
+        }
+        
+        ratingButtons.removeAll()
+        
         for _ in 0..<starCount {
             //Create button
             let button = UIButton()
